@@ -1,0 +1,238 @@
+/* 030637
+3C0753
+720455
+910A67 */
+
+body{
+    /* background: rgb(238,165,166);
+    background: linear-gradient(90deg, rgba(238,165,166,1) 0%, rgba(228,147,179,1) 32%, rgba(183,132,183,1) 60%, rgba(142,122,181,1) 100%); */
+
+    background: rgb(145,10,103);
+    background: linear-gradient(90deg, rgba(145,10,103,1) 0%, rgba(114,4,85,1) 32%, rgba(60,7,83,1) 60%, rgba(3,6,55,1) 100%);
+
+    
+    text-align: center;
+
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+#top-text {
+    font-family: "Farsan", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+
+h1 {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    letter-spacing: 5px;
+    opacity: .9;
+    /* text-shadow: 5px 2px rgb(161, 73, 73); */
+    text-shadow: 5px 2px rgb(174, 22, 129);
+    font-size: 5rem;
+    margin-bottom: 10px;
+    text-shadow: white 0 0 10px ;
+  }
+#section-2{
+    display: block;
+    margin-top: 0%;
+    margin-bottom: 5px;
+  }
+
+.colon{
+    display: inline-block;
+    color: azure;
+    font-size: 8rem;
+    font-family: "Chakra Petch", sans-serif;
+  }
+.box{
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px ;
+    height: auto;
+    margin: 2% 4% 3% 4%;
+    padding: 4% 5% 4% 5%;
+    box-shadow: 5px 5px black;
+    }
+
+.time{
+      /* margin-top: 85px; */
+      font-size: 8rem;
+  
+  }
+
+
+  #section-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn{
+    border: 2px solid white;
+    background-color: aliceblue;
+    padding: 1%;
+    width: 200px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    margin: 4%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-top: 2px;
+    column-count: 2;
+  }
+
+  #start:hover{
+    /* background-color: rgb(87, 5, 70); */
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+    box-shadow: 0 0 10px 5px white;
+  }
+
+  .mid{
+    color: azure;
+    background-color: transparent;
+
+  }
+  .mid:hover{
+    /* background-color: rgb(87, 5, 70); */
+    background-color: rgb(255, 255, 255);
+    color: rgb(5, 0, 0);
+    opacity: .7;
+    font-weight: 1400;
+    box-shadow: 0 0 10px 5px white;
+  }
+
+  #resume:hover{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    opacity: .7;
+    box-shadow: 0 0 10px 5px white;
+  }
+
+  #reset:hover{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    opacity: .7;
+    box-shadow: 0 0 10px 5px white;
+  }
+ 
+ul{
+  list-style: none;
+  margin-bottom: 2%;
+  scroll-behavior: smooth;
+
+}
+#section-4{
+  color: #ffffff;
+  margin-left: 10%;
+  margin-right: 10%;
+  visibility: hidden;
+}
+
+h2{
+  text-align: left;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+#LapTime-show{
+  padding: 1%;
+  border: 1px solid rgba(255, 255, 255, 0.333);
+  border-radius: 30px;
+  margin-bottom: 4%;
+  background-color: rgba(0, 0, 0, 0.274);
+}
+.lapTime{
+  display:inline;
+  font-size: 30px;
+}
+#lap-no{
+  margin-right: 30%;
+  opacity: .6;
+}
+
+#clear-lap{
+  margin-left: 15%;
+}
+#clear-lap:hover{
+  box-shadow: 0 0 10px 5px white;
+}
+
+
+  @media (max-width: 600px){
+    h1{
+      font-size: 3rem;
+    }
+    .box{
+    margin: 2%;
+    padding: 4% 5% 4% 5%;
+    }
+
+    .time{
+        font-size: 3rem;
+    }
+    .colon{
+        font-size: 3rem;;
+    }
+    #top-text{
+        font-size: .8rem;
+    }
+    .btn{
+      width: 80px;
+      font-size:smaller;
+      margin: 2%;
+    }
+    #LapTime-show{
+      padding: 1%;
+    }
+
+    #lap-no{
+      margin-right: 20%;
+    }
+  }
+
+  @media (min-width:601px) and (max-width: 1000px){
+    h1{
+      font-size: 4rem;
+    }
+
+    .box{
+      margin: 2%;
+      padding: 4% 5% 4% 5%;
+      }
+    .time{
+        font-size: 5rem;
+    }
+    .colon{
+        font-size: 5rem;;
+    }
+    #top-text{
+        font-size: 1rem;
+    }
+    .btn{
+      width: 80px;
+      font-size:smaller;
+      margin: 2%;
+    }
+
+    #LapTime-show{
+      padding: 1%;
+      width: 85%;
+      margin-left: 0%;
+    }
+    #lap-no{
+      margin-right: 20%;
+    }
+
+  }
+  
